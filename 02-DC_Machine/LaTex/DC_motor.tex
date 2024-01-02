@@ -1,0 +1,56 @@
+\documentclass[a4paper,11pt]{article}
+
+%packages used
+\usepackage{amsmath} 
+\usepackage[utf8]{inputenc}
+\usepackage{layout}
+
+\begin{document}
+
+\title{DC motor}
+\maketitle
+
+{\bf some notes}
+\\
+DC motor consists of Two coils, Armature and Field, Armature on Rotor and filed on stator they are perpendicular to each other
+\\
+\\
+{\bf Armature} and {\bf Field} voltage general equations:- 
+\[ V_a(t)=R_a i_a+L_a \frac{d i_a}{dt} + i_a \frac{d L_a}{dt} +M \frac{d i_f}{dt}+i_f \frac{dM}{dt} \]
+\[ V_f(t)=R_f i_f+L_f \frac{d i_f}{dt} + i_f \frac{d L_f}{dt} +M \frac{d i_a}{dt}+i_a \frac{dM}{dt} \]
+{\bf note}: \[ M=M_{af} \cos ( \theta )\] 
+\\
+For Armature voltage:
+
+\begin{align*}
+    M \frac{d i_f}{dt} = 0
+\end{align*}
+
+\begin{align*}
+    i_a \frac{d L_a}{dt} = 0, \: \text{due to bruches} 
+\end{align*}
+
+\begin{align*}
+i_f \frac{dM}{dt} = i_f \frac{dM}{d \theta} \frac{d \theta}{dt} = - M_{af} \sin(90) \omega_r i_f=\frac{p}{2} M_{af} \omega_m i_f 
+\end{align*}
+\\
+\\
+DC motor equations as following:
+\begin{align}
+    V_a(t)=R_a i_a + L_a \frac{d i_a}{dt} +M \omega i_f
+\end{align}
+
+\begin{align}
+    V_f(t)=R_f i_f + L_f \frac{d i_f}{dt}
+\end{align}
+
+\begin{align}
+    T_{em} = M i_f i_a
+\end{align}
+
+\begin{align}
+    T_{em} = T_L + j \frac{d \omega_m}{dt} + \beta \omega_m
+\end{align}
+
+
+\end{document}
