@@ -1,2 +1,8 @@
 # ignored files
-*.slxc
+/*.slxc
+
+# ignored folders
+slprj
+DC_Machine/slprj
+IM/slprj
+PMSM/slprj
