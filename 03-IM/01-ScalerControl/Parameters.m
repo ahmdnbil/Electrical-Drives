@@ -2,6 +2,7 @@ clc;
 clear;
 
 P=4;
+Fs=5e3;
 %stator voltage
 VLL_rms=460;
 VLL_p=VLL_rms*sqrt(2);
